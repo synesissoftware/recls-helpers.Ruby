@@ -1,11 +1,11 @@
-
+# frozen_string_literal: true
 # ######################################################################## #
 # File:     recls/helpers.rb
 #
 # Purpose:  Top-level include for recls-helpers.Ruby library
 #
 # Created:  14th August 2026
-# Updated:  14th August 2026
+# Updated:  15th August 2026
 #
 # Home:     http://github.com/synesissoftware/recls-helpers.Ruby
 #
