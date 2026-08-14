@@ -1,15 +1,13 @@
 #! /bin/bash
 
 #############################################################################
-# File:       build_gem.sh
+# File:     build_gem.sh
 #
-# Purpose:    Builds the gem
+# Purpose:  Builds the gem
 #
-# Created:    14th August 2026
-# Updated:    14th August 2026
-#
-# Author:     Matthew Wilson
+# Created:  9th June 2016
+# Updated:  14th August 2026
 #
 #############################################################################
 
-gem build recls-helpers-ruby.gemspec $*
+gem build *.gemspec $*
