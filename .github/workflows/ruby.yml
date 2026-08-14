@@ -78,16 +78,40 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-    - name: Installing dependencies
-      run: bundle install
-
-    - name: Installing dependencies explicitly
-      run: |
-        gem install recls-ruby
-        gem install xqsr3
-
-    - name: List gems
-      run: gem list
+    - name: Show Ruby version
+      run: ruby -v
 
     - name: Run tests
-      run: rake test
+      run: bundle exec rake test
+
+    - name: Gem build and install smoke
+      shell: bash
+      run: |
+        gem build recls-helpers-ruby.gemspec
+        gem install --local recls-helpers-ruby-*.gem
+        ruby -e "require 'recls/helpers/version'; abort('VERSION missing') unless defined?(Recls::Helpers::VERSION); puts Recls::Helpers::VERSION"
+
+  warnings:
+
+    name: Warnings
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checking out code
+      uses: actions/checkout@v4
+
+    - name: Remove Gemfile.lock
+      run: rm -f Gemfile.lock
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3'
+        bundler-cache: true
+
+    - name: Show Ruby version
+      run: ruby -v
+
+    - name: Run unit tests with warnings
+      run: ./run_all_unit_tests.sh --lib --warnings
