@@ -7,7 +7,7 @@
 
 #
 # Created: 14th August 2026
-# Updated: 14th August 2026
+# Updated: 15th August 2026
 #
 
 name: Ruby
@@ -15,10 +15,10 @@ name: Ruby
 on:
   push:
     branches:
-      - boilerplate
-      - dev
-      - idiomatic
       - master
+      - dev
+      - boilerplate
+      - idiomatic
       - rc1
       - rc2
       - rc3
@@ -26,6 +26,10 @@ on:
 
 permissions:
   contents: read
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
   test:
