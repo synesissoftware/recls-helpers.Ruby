@@ -1,16 +1,22 @@
+PATH
+  remote: .
+  specs:
+    recls-helpers-ruby (0.0.0)
+      recls-ruby (~> 2.13)
+
 GEM
   remote: https://rubygems.org/
   specs:
     recls-ruby (2.13.2)
-    xqsr3 (0.39.4.1)
+    xqsr3 (0.39.5)
 
 PLATFORMS
   arm64-darwin-25
   ruby
 
 DEPENDENCIES
-  recls-ruby (~> 2.13)
-  xqsr3 (~> 0.39, >= 0.39.4)
+  recls-helpers-ruby!
+  xqsr3 (~> 0.39)
 
 BUNDLED WITH
    2.6.9
