@@ -48,7 +48,13 @@ require 'recls/helpers'
 
 ## Components
 
-T.B.C.
+**recls-helpers.Ruby** currently ships the **`Recls::Helpers`** namespace and version metadata (`require 'recls/helpers'`), layered on [**recls.Ruby**](https://github.com/synesissoftware/recls.Ruby). Concrete helper APIs are still landing; the intended first set (see **TODO.md**) includes:
+
+* ignore / exclude filtering (`strip_excludes` / `reject_ignored`, `String` + `Regexp`);
+* `each_file_r` (and related flag builders) for recursive file walks with default directory and ignores;
+* path-or-directory search dispatch;
+* `empty_directory?`, `directory_byte_size`, `display_path`, and group-by helpers;
+* optional stock Synesis ignore / pattern presets;
 
 
 ## Examples
