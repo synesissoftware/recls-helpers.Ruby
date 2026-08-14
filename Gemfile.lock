@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    recls-ruby (2.13.2)
+    xqsr3 (0.39.4.1)
+
+PLATFORMS
+  arm64-darwin-25
+  ruby
+
+DEPENDENCIES
+  recls-ruby (~> 2.13)
+  xqsr3 (~> 0.39, >= 0.39.4)
+
+BUNDLED WITH
+   2.6.9
