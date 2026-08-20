@@ -12,11 +12,10 @@ GEM
     recls-ruby (2.13.4)
     test-unit (3.7.8)
       power_assert
-    xqsr3 (0.39.5)
+    xqsr3 (0.39.8)
 
 PLATFORMS
-  arm64-darwin-25
-  ruby
+  x86_64-darwin-20
 
 DEPENDENCIES
   rake (~> 13.0)
@@ -25,4 +24,4 @@ DEPENDENCIES
   xqsr3 (>= 0.39.5, < 1.0)
 
 BUNDLED WITH
-   2.6.9
+   2.2.16
