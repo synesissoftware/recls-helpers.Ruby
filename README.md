@@ -5,7 +5,6 @@ Helper types and functions for working with **recls.Ruby**
 ![Language](https://img.shields.io/badge/Ruby-CC342D?style=flat&logo=ruby&logoColor=white)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Gem Version](https://badge.fury.io/rb/recls-helpers-ruby.svg)](https://badge.fury.io/rb/recls-helpers-ruby)
-[![GitHub release](https://img.shields.io/github/v/release/synesissoftware/recls-helpers.Ruby.svg)](https://github.com/synesissoftware/recls-helpers.Ruby/releases/latest)
 [![Last Commit](https://img.shields.io/github/last-commit/synesissoftware/recls-helpers.Ruby)](https://github.com/synesissoftware/recls-helpers.Ruby/commits/master)
 [![Ruby](https://github.com/synesissoftware/recls-helpers.Ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/synesissoftware/recls-helpers.Ruby/actions/workflows/ruby.yml)
 
@@ -20,6 +19,12 @@ Helper types and functions for working with **recls.Ruby**
   - [Where to get help](#where-to-get-help)
   - [Contribution guidelines](#contribution-guidelines)
   - [Dependencies](#dependencies)
+    - [Efferent (fan-out)](#efferent-fan-out)
+      - [Runtime Dependencies (aka "Normal Dependencies")](#runtime-dependencies-aka-normal-dependencies)
+      - [Development Dependencies](#development-dependencies)
+    - [Afferent (fan-in)](#afferent-fan-in)
+      - [Runtime dependents](#runtime-dependents)
+      - [Development dependents](#development-dependents)
   - [Related projects](#related-projects)
   - [License](#license)
 
@@ -59,7 +64,7 @@ require 'recls/helpers'
 
 ## Examples
 
-Examples are provided in the `examples` directory, along with a markdown description for each. A detailed list TOC of them is provided in [EXAMPLES.md](./EXAMPLES.md).
+Examples are provided in the ```examples``` directory, along with a markdown description for each. A detailed list TOC of them is provided in [EXAMPLES.md](./EXAMPLES.md).
 
 
 ## Project Information
@@ -77,24 +82,47 @@ Defect reports, feature requests, and pull requests are welcome on https://githu
 
 ### Dependencies
 
-This library has **efferent** (fan-out) dependencies on:
 
-* [**recls.Ruby**](https://github.com/synesissoftware/recls.Ruby) (`recls-ruby`);
+#### Efferent (fan-out)
 
-and, for development/tests:
+Libraries upon which **recls-helpers.Ruby** depends:
 
-* [**xqsr3**](https://github.com/synesissoftware/xqsr3/).
 
-It has no known **afferent** (fan-in) dependencies yet.
+##### Runtime Dependencies (aka "Normal Dependencies")
+
+* [**recls.Ruby**](https://github.com/synesissoftware/recls.Ruby);
+
+
+##### Development Dependencies
+
+* [**rake**](https://rubygems.org/gems/rake);
+* [**test-unit**](https://rubygems.org/gems/test-unit);
+* [**xqsr3**](https://github.com/synesissoftware/xqsr3);
+
+
+#### Afferent (fan-in)
+
+Projects that depend on **recls-helpers.Ruby**:
+
+
+##### Runtime dependents
+
+* \<none>;
+
+
+##### Development dependents
+
+* \<none>;
 
 
 ### Related projects
 
-* [**recls.Ruby**](https://github.com/synesissoftware/recls.Ruby);
-* [**recls**](https://github.com/synesissoftware/recls) (**C** / **C++**);
-* [**recls.Go**](https://github.com/synesissoftware/recls.Go);
-* [**recls.NET**](https://github.com/synesissoftware/recls.NET);
-* [**recls.Rust**](https://github.com/synesissoftware/recls.Rust);
+* [**recls**](https://github.com/synesissoftware/recls/);
+* [**recls.Go**](https://github.com/synesissoftware/recls.Go/);
+* [**recls.NET**](https://github.com/synesissoftware/recls.NET/);
+* [**recls.Python**](https://github.com/synesissoftware/recls.Python/);
+* [**recls.Ruby**](https://github.com/synesissoftware/recls.Ruby/);
+* [**recls.Rust**](https://github.com/synesissoftware/recls.Rust/);
 
 
 ### License

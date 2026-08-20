@@ -5,9 +5,9 @@
 # Purpose:  Top-level include for recls-helpers.Ruby library
 #
 # Created:  14th August 2026
-# Updated:  15th August 2026
+# Updated:  19th August 2026
 #
-# Home:     http://github.com/synesissoftware/recls-helpers.Ruby
+# Home:     https://github.com/synesissoftware/recls-helpers.Ruby
 #
 # Author:   Matthew Wilson
 #
