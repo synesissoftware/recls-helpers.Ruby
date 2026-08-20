@@ -1,7 +1,7 @@
 # recls-helpers.Ruby - Examples <!-- omit in toc -->
 
-|Name|Source & Description|Summary|
-|---|---|---|
+| Name | Source & Description | Summary |
+| ---- | -------------------- | ------- |
 
 
 <!-- ########################### end of file ########################### -->

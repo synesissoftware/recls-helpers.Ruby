@@ -67,7 +67,7 @@ jobs:
 
     steps:
     - name: Checking out code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
 
     - name: Remove Gemfile.lock
       shell: bash
@@ -77,9 +77,9 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby-version }}
-        # Bundler 4 honours Gemfile `lockfile false`, so no Gemfile.lock
-        # is written. bundler-cache cats that file after `bundle lock`
-        # and fails on Windows 3.2+ (setup-ruby installs Bundler ~> 4).
+        # Bundler 4 honours Gemfile `lockfile false`, so no Gemfile.lock is
+        # written. bundler-cache cats that file after `bundle lock` and
+        # fails on Windows 3.2+ (setup-ruby installs Bundler ~> 4).
         bundler-cache: false
 
     - name: Install gems
@@ -106,7 +106,7 @@ jobs:
 
     steps:
     - name: Checking out code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
 
     - name: Remove Gemfile.lock
       shell: bash
