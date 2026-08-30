@@ -5,7 +5,7 @@
 # Purpose:  Version for recls-helpers.Ruby library
 #
 # Created:  14th August 2026
-# Updated:  19th August 2026
+# Updated:  30th August 2026
 #
 # Home:     https://github.com/synesissoftware/recls-helpers.Ruby
 #
@@ -51,7 +51,7 @@ module Recls
 module Helpers
 
   # Current version of the recls-helpers.Ruby library
-  VERSION           = '0.0.1'
+  VERSION           = '0.0.2'
 
   private
   # @!visibility private
