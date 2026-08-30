@@ -1,6 +1,12 @@
 # recls-helpers.Ruby - Changes <!-- omit in toc -->
 
 
+## 0.0.2 - 30th August 2026
+
+* stopped tracking **Gemfile.lock** and stopped ignoring **.vscode/**;
+* corrected shared project URL metadata in **recls-helpers-ruby.gemspec**;
+
+
 ## 0.0.1 - 19th August 2026
 
 * **recls-helpers-ruby.gemspec**: `required_ruby_version` is the range `>= 2.0`; **Gemfile.lock** and **.ruby-version** excluded from `spec.files`; `spec.summary` matches the README tagline; packaged **AUTHORS**, **CHANGES**, **CONTRIBUTING**, **EXAMPLES**, **FAQ**, **INSTALL**, **NEWS**, **SECURITY**, **TODO**;
